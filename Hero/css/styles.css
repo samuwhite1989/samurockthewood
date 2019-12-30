@@ -1,0 +1,65 @@
+body {
+    font-family:'Lato', sans-serif;
+    color:#747704;
+    font-weight: 300;
+}
+
+hr {
+    margin-top:7px;
+    border: 0;
+    color: black;
+    background-color: black;
+    height: 1px
+}
+
+    ul {
+        margin-top:10px;
+    }
+    li {
+        float:left;
+        list-style:none;
+        padding:0 20px; cursor:pointer;
+        position:relative;
+        font-family:fantasy;
+        font-size:150%;
+    }
+    li::before {
+        content:"";
+        position:absolute; top:0;
+        left:100%; width:0; height:100%;
+        border-bottom:2px solid #FF0019;
+        transition:0.2s all linear;
+        z-index:-1;
+    }
+    li:hover::before {
+        width:100%; left:0;
+    }
+    li:hover ~ li::before {
+        left:0;
+    }
+
+.tex-muted {
+    color:#BCBBBB;
+}
+.text-thin {
+    font-weight: 100;
+}
+
+.title-super {
+    font-size: 60px;
+}
+.title-logo{
+    margin-top:20px;
+    float:right;
+}
+
+.top_news {
+    font-family: 'Ubuntu Condensed', sans-serif;
+    line-height: 150%;
+    color:#404040;
+}
+
+.news_picture {
+    border-radius: 30px;
+    float:right;
+}
